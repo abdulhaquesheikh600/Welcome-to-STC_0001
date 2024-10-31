@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STC Company</title>
+  <!-- Link to External CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="bg-blue">
+    <div class="container flex">
+      <div class="text-2xl font-bold">
+        <span>pana</span><span class="text-dark">cloud</span>
+      </div>
+      <div>
+        <button class="nav-button" onclick="showPage('home')">HOME</button>
+        <button class="nav-button" onclick="showPage('about')">ABOUT</button>
+        <button class="nav-button" onclick="showPage('portfolio')">PORTFOLIO</button>
+        <button class="nav-button" onclick="showPage('contact')">CONTACT</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Home Page -->
+    <section id="home" class="page-content active">
+      <h2>Welcome to STC</h2>
+      <p>STC is an innovator in the digital world. We help our clients identify new opportunities, lead change, and differentiate their brand.</p>
+      <img src="https://scontent.fkhi17-1.fna.fbcdn.net/v/t1.6435-9/133472619_152028436682829_6278727103687344796_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=vftos2oI81QQ7kNvgFeFIMh&_nc_zt=23&_nc_ht=scontent.fkhi17-1.fna&_nc_gid=A9o84d9w5aovMrv5mU-YU-B&oh=00_AYDkiIfomfb_nK4h0Ti2k-NYIJ9T6rQtjMsTodsYa6tUEQ&oe=674A67F2" alt="Placeholder Image" class="image-full">
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page-content">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <ul>
+        <li>Linux</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+      </ul>
+    </section>
+
+    <!-- Portfolio Page -->
+    <section id="portfolio" class="page-content">
+      <h2>Our Portfolio</h2>
+      <div>
+        <img src="https://via.placeholder.com/400x300" alt="Portfolio 1" class="image-full">
+        <h3>Why it's special</h3>
+        <p>Robby incorporates an interactive experience into his portfolio.</p>
+      </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page-content">
+      <h2>Contact Us</h2>
+      <form id="contact-form" onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-input" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-input" required>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" class="form-input"></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2019. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to External JavaScript File -->
+  <script src="scripts.js"></script>
+</body>
+</html>

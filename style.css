@@ -1,0 +1,91 @@
+/* Reset Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and Font Styling */
+body, html {
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation Styling */
+.bg-blue {
+  background-color: #69a6d6;
+  color: white;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-dark {
+  color: #333;
+}
+
+/* Navigation Buttons */
+.nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin: 0 5px;
+}
+
+.nav-button:hover {
+  color: #ccc;
+}
+
+/* Page Content Display */
+.page-content {
+  display: none;
+  margin-top: 20px;
+}
+
+.page-content.active {
+  display: block;
+}
+
+.image-full {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Form Styling */
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #69a6d6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #69a6d6;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
